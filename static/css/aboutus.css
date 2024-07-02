@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: antiquewhite;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+  text-align: center; /* Center align the heading */
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: rgb(35, 35, 85);
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+/* Additional Text Styles */
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+.aboutpresent {
+  margin-left: 20px;
+  margin-top: 20px;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+.aboutpresent h1 {
+  font-size: 70px;
+  color: #222;
+  animation: bulgeAndColorChange 1s ease-in-out infinite alternate;
+  display: inline;
+  justify-content: center;
+}
+
+
+.container {
+  float: left;
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: antiquewhite;
+  padding: 30px; 
+  border-radius: 30px 50px 70px; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.container p {
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+  color: rgb(24, 24, 49);
+  margin-bottom: 20px; 
+}
+
+.container a {
+  color: blue;
+}
+
+.container a:hover {
+  color: darkblue; 
+}
+.logo-creative-section{
+    float: right ;
+    width: 40%; 
+    margin-top: 10%;
+}
+.logo-creative-section .logo img{
+    width: 40px;
+}

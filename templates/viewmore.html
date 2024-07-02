@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE ME</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    
+    
+    <style>
+        .back-btn {
+            display: none;
+        }
+
+        .view-more-btn {
+            margin-bottom: 20px;
+            margin-left: 15px auto;
+            margin-top: 5px;
+        }
+
+        .gallery {
+            position: relative;
+        }
+
+        .view-more {
+            position: relative;
+        }
+
+        .back-btn {
+            position: relative;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="book.html">Book</a></li> 
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Bloggers section -->
+    <section id="bloggers">
+        <h1>GEO-STREAM</h1>
+        <p>The blog page is all about the frenzies up and about geopolitics--</p>
+        <div class="gallerywrap">
+            <div class="gallery">
+                <!-- Add your images here -->
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 1">
+                </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 2">
+                </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 3">
+                                </div>
+
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 4"> 
+                               </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 5"> 
+                               </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 6"> 
+                               </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 7"> 
+                               </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 8"> 
+                               </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 9">  
+                              </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 10">
+                                </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 11">
+                                </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 12">
+                                </div>
+
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 13">
+                                </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 14">
+                                </div>
+                <div class="photosanddetails">
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="Photo 15">
+                                </div>
+            </div>
+            <div class="view-more">
+                <button id="viewmorebtn" class="view-more-btn">View More</button>
+                <button onclick="window.location.reload();" class="back-btn">Back</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let viewMoreBtn = document.getElementById("viewmorebtn");
+        let backBtn = document.querySelector(".back-btn");
+        let photosPerPage = 3;
+        let currentPhotos = photosPerPage;
+        let viewMoreClicked = false;
+
+        viewMoreBtn.addEventListener("click", () => {
+            if (!viewMoreClicked) {
+                backBtn.style.display = "inline-block";
+                viewMoreClicked = true;
+            }
+            currentPhotos += photosPerPage;
+            if (currentPhotos >= scrollContainer.children.length) {
+                viewMoreBtn.style.display = "none";
+            }
+            scrollContainer.scrollLeft += scrollContainer.clientWidth;
+        });
+
+        backBtn.addEventListener("click", () => {
+            if (viewMoreClicked) {
+                window.location.reload();
+            }
+        });
+    </script>
+</body>
+</html>

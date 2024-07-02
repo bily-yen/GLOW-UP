@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE ME</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
+    <style>
+        .icon {
+            color: #333;
+            font-size: 1em; 
+            margin-right: 10px; 
+            border-style: none;
+        }
+
+        fieldset {
+            font-size: 12px; /* Reduce the font size of the fieldset */
+            padding: 2px; 
+             }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>GLOW-UP</h3>
+    </header>
+    <div class="hero">
+        <nav>
+            <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" alt="">
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="book.html">Book</a></li> 
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a class="active" href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#" class="login-btn">log in</a>
+                <a href="#" class="btn">About Us  </a>
+            </div>
+        </nav>
+        <div class="present">
+            <h1>Barbershop <br> Salon</h1>
+            <p>Welcome to our Beauty shop for quality services and products <br>Grooming, Hair-styling, manicure, pedicure</p>
+            <a href="#" class="btn">Sign up</a>
+            <div class="content">
+                <h2>Contacts</h2>
+                <p>Welcome to Style Me, where a gentle touch and smile will always certainly keep you going. Communicate to us your desires, and we shall get back with a diverse list of options.</p>
+            </div>
+            
+        </div>
+        <img src="{{ url_for('static', filename='SPAPHOTOS/pic.png') }}" class="heroimg">
+    </div>
+    
+    <section class="contacts">
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <button type="submit" class="btn btn-primary mb-2">Address</button>
+                        <p>Tassia Magic Square,<br>Nairobi, Kenya,<br>Floor 2</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="text">
+                        <button type="submit" class="btn btn-primary mb-2">Call</button>
+                        <p>0716470665<br>0700772153</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <button type="submit" class="btn btn-primary mb-2">Email</button>
+                        <p>styleme@gmail.com<br>styleme.mail.co.ke</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="/submit_contact_form" method="POST">
+                        <fieldset>
+                            <legend>Contact Style Me</legend>
+                            <h2>Send a message</h2>
+                
+                            <div class="form-group">
+                                <label for="name">Full name</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control" id="email" required>
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="phone_number">Phone number</label>
+                                <input type="tel" name="phone_number" class="form-control" id="phone_number" required>
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="type_message">Type your message...</label>
+                                <textarea name="message" class="form-control" id="type_message" rows="4" required></textarea>
+                            </div>
+                
+                            <button type="submit" class="btn btn-white mb-2">Send</button>
+                        </fieldset>
+                    </form>
+                    <img src="{{ url_for('static', filename='SPAPHOTOS/pic.png') }}" class="herimg">
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

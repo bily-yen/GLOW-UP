@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE ME</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    
+    
+</head>
+<body>
+    <header>
+        <h3>GLOW-UP</h3>
+    </header>
+   
+    <div class="hero">
+        <nav>
+            <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" >
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="explore.html">explore</a></li>
+                    <li><a href="book.html">Book</a></li> 
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                
+            </div>
+            <div>
+                <a href="#" class="login-btn">log in</a>
+                <a href="#" class="btn">About Us  </a>
+            </div>
+        </nav>
+        <div class="present">
+            <h1>Barbershop <br> Salon</h1>
+            <p>WElcome to our Beauty shop for qaulity services and products <br>Grooming,Hair-styling,manicure,pedicure</p>
+            <a href="#" class="btn">sign up</a>
+        </div>
+        <img src="{{ url_for('static', filename='SPAPHOTOS/pic.png') }}" class="heroimg">
+        
+    </div>
+    <section id="exploreservices">
+        <div class="headingsfeatures">
+             <h1>Glow-Up offers beauty services and Products</h1>
+        <p>From skin care to hair,Our shelves are stocked with up to date products that makes you glow like the dime you are</p>
+        </div>
+        <div class="feature_base" >
+            <div class="feature_box">
+            <h3>BARBESHOP</h3>
+                <h4>---TOP SEVICES---</h4>
+                <p>high-Fade</p>
+                <p>low-fade</p>
+                <p>bob</p>
+                <p>bald</p>
+                <p>punk</p>
+                <p>Fade</p>
+                <p>level-slope</p>
+            </div>
+            <div class="feature_box">
+            <h3>SALON</h3>
+            <h4>Our beautiful Salonist we handle you diligently</h4>
+                <p>high-Fade</p>
+                <p>weaving</p>
+                <p>blow-out</p>
+                <p>conditioning</p>
+                <p>braids</p>
+                <p>extensions</p>
+                <p>dreadlocks</p>
+
+            </div>
+            <div class="feature_box">
+            <h3>OUR SHOP</h3>
+            <h4>personal items <br>grooming and household esentials</h4>
+                <p>Beauty-products</p> 
+                <p>portraits</p>
+                <p>perfumes</p>
+                <p>vests</p>
+                <p>under-wears</p>
+                <p>sanitary-equipment</p>
+            </div>
+            
+        </div>
+        <section id="features">
+            <div class="headingsfeatures">
+                 <h1>Beauty Products</h1>
+            </div>
+            <div class="fea_base" >
+                <div class="fea_box">
+                <h3>Hair</h3>
+                <p>Tender hair care <br>personalized products for your hair</p>
+                </div>
+                <div class="fea_box">
+                <h3>skin care</h3>
+                <p>We are keen to supply you with safe prodcts for sensitive skin</p>
+                </div>
+                <div class="fea_box">
+                <h3>General items</h3>
+                <p>personal items <br>grooming and household esentials</p>
+                </div>
+                
+                
+            </div>
+            <div class="headingsfeatures">
+                <h1><a href="Products.html" class="btn">SHOP</a></h1>
+           <p>From skin care to hair,Our shelves are stocked with up to date products that makes you glow like the dime you are</p>
+           </div>
+              
+            
+            </div>
+    
+        </section>
+    
+         
+   
+    <div class="galleryheader">
+        <div class="galleryhead">
+            <h1>GALLERY</h1>
+            <p>Scroll through our endless gallery stacked with a rare visual experience</p>
+        </div>
+    </div>
+
+
+    <div class="gallerywrap">
+        <img src="{{ url_for('static', filename='SPAPHOTOS/back.png')}}" id="backbtn">
+
+    <div class="gallery">
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/11.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/22.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/33.JPG') }}"></span>
+          
+        </div>
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/55.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/5.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/6.JPG') }}"></span>
+        </div>
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/8.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/9.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/10.JPG') }}"></span>
+        </div>
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/12.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/13.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/14.JPG') }}"></span>
+        </div>
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/11.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/22.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/33.JPG') }}"></span>
+          
+        </div>
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/9.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/55.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/111.JPG') }}"></span>
+        </div>
+        <div>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/9.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/9.JPG') }}"></span>
+            <span><img src="{{ url_for('static', filename='SPAPHOTOS/9.JPG') }}"></span>
+        </div>
+    </div>
+    <img src="{{ url_for('static', filename='SPAPHOTOS/next.png')}}" id="nextbtn">
+</div>
+    </div>
+</div>
+    
+    </div>
+   
+    <div class="galleryheader">
+        <div class="galleryhead">
+            <h1>portraits</h1>
+            <p>we also deliver portraits on order</p>
+        </div>
+    </div>
+    
+
+    
+    <section id="bloggers">
+        
+        <div class="blog">
+            <div class="photosanddetails">
+                <img src="{{ url_for('static', filename='SPAPHOTOS/12.jpg') }}" alt="Photo 1">
+            </div>
+            <div class="photosanddetails">
+                <img src="{{ url_for('static', filename='SPAPHOTOS/7.jpg') }}" alt="Photo 2">
+            </div>
+            
+            <div class="photosanddetails">
+                <img src="{{ url_for('static', filename='SPAPHOTOS/33.jpg') }}" alt="Photo 3">
+                
+            </div>
+            
+        </div>
+        <div class="btn">
+            <a class="blue" href="">order portrait</a> 
+        </div>
+        
+    </section>
+    <div class="foot">
+        <div class="companylogo">
+            <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" >
+            <h1>Thank you for exploring our vast shop</h1>
+
+        </div>
+    </div>
+
+    <div class="footy">
+        
+        </div>
+    
+    
+    
+
+
+            <script>
+                let scrollContainer = document.querySelector(".gallery")
+                let backbtn = document.getElementById("backbtn")
+                let nextbtn = document.getElementById("nextbtn")
+    
+                scrollContainer.addEventListener("wheel",(evt)=>{
+                    evt.preventDefault();
+                    scrollContainer.scrollLeft += evt.deltaY;
+                    scrollContainer.style.scrollBehavior = "animate"
+                });
+                nextbtn.addEventListener("click", ()=>{
+                    scrollContainer.style.scrollBehavior = "smooth"
+                    scrollContainer.scrollLeft += 300;
+                });
+                backbtn.addEventListener("click", ()=>{
+                    scrollContainer.style.scrollBehavior = "smooth"
+                    scrollContainer.scrollLeft -= 300;
+                })
+    
+    
+    
+            
+    
+            </script>
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE ME</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutus.css') }}"/>
+    
+    
+</head>
+<body>
+    <header>
+        <h3>GLOW-UP</h3>
+    </header>
+   
+
+<div class="hero">
+    <nav>
+        <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" >
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">explore</a></li>
+                <li><a href="book.html">Book</a></li> 
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            
+        </div>
+        <div>
+            <a href="#" class="login-btn">log in</a>
+            <a class="active" href="aboutus.html" class="btn">About Us  </a>
+        </div>
+    </nav>
+
+    <div class="aboutpresent">
+        <h1>Barbershop <br> Salon</h1>
+        <p>WElcome to our Beauty shop for qaulity services and products <br>Grooming,Hair-styling,manicure,pedicure</p>
+        <a href="#" class="btn">sign up</a>
+    </div>
+    <img src="{{ url_for('static', filename='SPAPHOTOS/pic.png') }}" class="heroimg">
+    
+    </div>
+
+    <div class="container">
+        <h2>About Glow-Up</h2>
+        <p>Welcome to Glow-Up, where beauty meets tranquility and every visit is an indulgent journey into self-care and rejuvenation. Nestled in the heart of Tassia, Glow-Up is not just a spa; it's a sanctuary for those seeking a holistic approach to beauty and wellness. Step into our serene oasis, where the stresses of the outside world melt away amidst soft lighting, soothing aromas, and the gentle hum of relaxation.
+
+        At Glow-Up, we believe in the transformative power of self-care, and our team of expert therapists is dedicated to providing you with nothing short of excellence. <br> From luxurious facials that leave your skin glowing with vitality to invigorating massages that melt away tension, each treatment is meticulously crafted to cater to your unique needs and desires.
+        
+        But Glow-Up is more than just a beauty shop; it's a haven where inner and outer beauty converge. Our comprehensive range of services goes beyond traditional spa treatments, offering holistic therapies designed to nourish both body and soul. Whether you're in need of a rejuvenating body scrub, a revitalizing yoga session, or a transformative meditation class, we have everything you need to restore balance and harmony to your life.
+        
+        At Glow-Up, quality is not just a promise; it's our passion. We use only the finest products and techniques, ensuring that every experience with us is nothing short of extraordinary. <br> From the moment you step through our doors, you'll be enveloped in a world of luxury and pampering, where every detail is designed to exceed your expectations.
+        
+        So why wait? Embark on your journey to radiant beauty and inner peace today at Glow-Up, where every moment is an opportunity to shine. Welcome home to beauty, welcome home to Glow-Up.</p>
+   
+    </div>
+    <div class="logo-creative-section">
+    <h2>Our Visual Story</h2>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.jpg') }}" alt="Company Logo">
+        <p>Description of your logo and its significance.</p>
+    </div>
+    <div class="creative-elements">
+        <h3>Location</h3>
+        <div class="creative-image">
+            <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.jpg') }}" alt="Creative Image">
+            <p>Our shop is located along magic square road in Nairobi Cbd. <br>Visit our contacts page for directions</p>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
