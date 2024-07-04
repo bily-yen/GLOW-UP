@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE ME</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Products.css') }}">
+ 
+    
+</head>
+<body>
+
+   <nav>
+        <img src="{{ url_for('static', filename='SPAPHOTOS/VOLVO.JPG') }}" >
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="book.html">Book</a></li> 
+                <li><a class="active" href="Products.html">Products</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="header">
+            <p class="logo"><i class="fas fa-star"></i></p>
+            <div class="cart">
+                <a href="cart-page.html">
+                    <i class="fas fa-shopping-cart"><p id="count">0</p></i>
+    
+                </a>
+            </div>
+        </div>
+
+        <div class="searchnavbar">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </nav>
+
+    <section id="features">
+            <div class="search-container">
+                <h2>Amazing Offers <br>affordabe items </h2>
+                <h2>Essentials<br>endless catalogue</h2>
+                <h2>Essentials<br>endless catalogue</h2>
+                <h2>Amazing Offers <br>affordabe items </h2>
+                <h2>Essentials<br>endless catalogue</h2>
+                <h2>Essentials<br>endless catalogue</h2>
+                <h2>Essentials<br>endless catalogue</h2>
+                
+            </div>
+    </section>
+    <div class="sidebar">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+            <button id="payBtn" onclick="payTotal()">Pay</button>  
+        </div>
+    </div>
+    
+
+  
+    <script src="{{ url_for('static', filename='js/products.js') }}"></script>
+    
+</body>
+</html>
